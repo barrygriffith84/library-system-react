@@ -40,7 +40,8 @@
             "author": "Abdul Alhazred",
             "genre": "Religion",
             "isbn": "978-0380751921",
-            "libraryId": 1
+            "libraryId": 1,
+            "available": true
         },
         {
             "id": 2,
@@ -48,7 +49,8 @@
             "author": "Robert R. McCammon",
             "genre": "Horror",
             "isbn": "978-0671692650",
-            "libraryId": 1
+            "libraryId": 1,
+            "available": true
         },
         {
             "id": 3,
@@ -56,7 +58,8 @@
             "author": "Ray Bradbury",
             "genre": "Horror",
             "isbn": "978-1501167713",
-            "libraryId": 1
+            "libraryId": 1,
+            "available": false
         },
         {
             "id": 4,
@@ -64,7 +67,8 @@
             "author": "Jack London",
             "genre": "Adventure",
             "isbn": "978-1645940098",
-            "libraryId": 1
+            "libraryId": 1,
+            "available": true
         },
         {
             "id": 5,
@@ -72,7 +76,8 @@
             "author": "Herman Hesse",
             "genre": "Religious Historical Fiction",
             "isbn": "978-0553208849",
-            "libraryId": 1
+            "libraryId": 1,
+            "available": false
         },
         {
             "id": 6,
@@ -80,7 +85,8 @@
             "author": "Dan Simmons",
             "genre": "Horror",
             "isbn": "978-0399135736",
-            "libraryId": 1
+            "libraryId": 1,
+            "available": false
         }
     ],
     "patron-book": [

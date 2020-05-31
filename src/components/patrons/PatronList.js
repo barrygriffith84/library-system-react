@@ -22,7 +22,7 @@ class PatronList extends Component {
         return (
             <div className="container-cards">
                 {this.state.patrons.map((currentPatron) => {
-                    return <PatronCard key={currentPatron.id} book={currentPatron} />;
+                    return (currentPatron.active) ? <PatronCard key={currentPatron.id} book={currentPatron} /> : ''
                 })}
             </div>
         )

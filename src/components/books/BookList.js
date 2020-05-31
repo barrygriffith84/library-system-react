@@ -22,7 +22,8 @@ class BookList extends Component {
         return (
             <div className="container-cards">
                 {this.state.books.map((currentBook) => {
-                    return <BookCard key={currentBook.id} book={currentBook} />;
+                    
+                    return (currentBook.available) ? <BookCard key={currentBook.id} book={currentBook} /> : ""
                 })}
             </div>
         )
