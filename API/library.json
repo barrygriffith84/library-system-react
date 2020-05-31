@@ -1,0 +1,109 @@
+{
+    "libraries": [
+        {
+            "id": 1,
+            "name": "Carter County Public Library",
+            "address": "116 West Main St. Grayson, KY 41143",
+            "email": "library@email.com"
+        }
+    ],
+    "patrons": [
+        {
+            "id": 1,
+            "name": "Barry Griffith",
+            "contactInfo": "555-555-0001",
+            "dob": "04/04/1984",
+            "libraryId": "1",
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Abdul Alhazred",
+            "contactInfo": "555-555-0002",
+            "dob": "31/10/692",
+            "libraryId": "1",
+            "active": true
+        },
+        {
+            "id": 3,
+            "name": "Poodle Bob",
+            "contactInfo": "555-555-0003",
+            "dob": "01/04/1990",
+            "libraryId": "1",
+            "active": false
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "Necronomicon",
+            "author": "Abdul Alhazred",
+            "genre": "Religion",
+            "isbn": "978-0380751921",
+            "libraryId": 1
+        },
+        {
+            "id": 2,
+            "title": "Swan Song",
+            "author": "Robert R. McCammon",
+            "genre": "Horror",
+            "isbn": "978-0671692650",
+            "libraryId": 1
+        },
+        {
+            "id": 3,
+            "title": "Something Wicked This Way Comes",
+            "author": "Ray Bradbury",
+            "genre": "Horror",
+            "isbn": "978-1501167713",
+            "libraryId": 1
+        },
+        {
+            "id": 4,
+            "title": "The Call of the Wild",
+            "author": "Jack London",
+            "genre": "Adventure",
+            "isbn": "978-1645940098",
+            "libraryId": 1
+        },
+        {
+            "id": 5,
+            "title": "Siddhartha",
+            "author": "Herman Hesse",
+            "genre": "Religious Historical Fiction",
+            "isbn": "978-0553208849",
+            "libraryId": 1
+        },
+        {
+            "id": 6,
+            "title": "Summer of Night",
+            "author": "Dan Simmons",
+            "genre": "Horror",
+            "isbn": "978-0399135736",
+            "libraryId": 1
+        }
+    ],
+    "patron-book": [
+        {
+            "id": 1,
+            "patronId": 1,
+            "bookId": 6,
+            "checkoutDate": "31/05/2020",
+            "returnDate": "13/06/2020"
+        },
+        {
+            "id": 2,
+            "patronId": 1,
+            "bookId": 3,
+            "checkoutDate": "31/05/2020",
+            "returnDate": "13/06/2020"
+        },
+        {
+            "id": 3,
+            "patronId": 2,
+            "bookId": 5,
+            "checkoutDate": "31/05/2020",
+            "returnDate": "13/06/2020"
+        }
+    ]
+}
