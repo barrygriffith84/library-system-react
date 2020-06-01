@@ -10,6 +10,7 @@ class BookCard extends Component {
                     <p>Genre: {this.props.book.genre}</p>
                     <p>ISBN: {this.props.book.isbn}</p>
                 </div>
+                <button type="button" onClick={()=> this.props.delete(this.props.book.id)}>Delete</button>
             </div>
         );
     }

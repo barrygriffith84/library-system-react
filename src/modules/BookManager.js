@@ -6,7 +6,14 @@ const BookManager = {
   },
   getAll() {
     return fetch(`${remoteURL}/books`).then(result => result.json())
+  },
+  delete(id) {
+    return fetch(`http://localhost:5002/books/${id}`, {
+        method: "DELETE"
+    })
+    .then(result => result.json())
   }
 }
+
 
 export default BookManager

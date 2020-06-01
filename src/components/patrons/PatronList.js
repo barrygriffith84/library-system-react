@@ -7,6 +7,16 @@ class PatronList extends Component {
         patrons: [],
     }
 
+    patchPatron = id => {
+        PatronManager.patch(id)
+        .then(PatronManager.getAll)
+        .then((parsedPatrons) => {
+            this.setState({
+                patrons: parsedPatrons
+            })
+        })
+    }
+
     componentDidMount() {
         console.log("Book list: ComponentDidMount");
         PatronManager.getAll()
@@ -17,12 +27,14 @@ class PatronList extends Component {
             })
     }
 
+
+    
     render() {
 
         return (
             <div className="container-cards">
                 {this.state.patrons.map((currentPatron) => {
-                    return (currentPatron.active) ? <PatronCard key={currentPatron.id} book={currentPatron} /> : ''
+                    return (currentPatron.active) ? <PatronCard key={currentPatron.id} patron={currentPatron} patch={this.patchPatron}/> : ''
                 })}
             </div>
         )

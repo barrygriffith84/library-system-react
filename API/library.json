@@ -30,7 +30,7 @@
             "contactInfo": "555-555-0003",
             "dob": "01/04/1990",
             "libraryId": "1",
-            "active": false
+            "active": true
         }
     ],
     "books": [
