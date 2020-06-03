@@ -12,7 +12,16 @@ const BookManager = {
         method: "DELETE"
     })
     .then(result => result.json())
-  }
+  },
+  post(newBook) {
+    return fetch(`${remoteURL}/books`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newBook)
+    }).then(data => data.json())
+}
 }
 
 

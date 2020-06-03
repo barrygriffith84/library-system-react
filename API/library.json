@@ -1,115 +1,137 @@
 {
-    "libraries": [
-        {
-            "id": 1,
-            "name": "Carter County Public Library",
-            "address": "116 West Main St. Grayson, KY 41143",
-            "email": "library@email.com"
-        }
-    ],
-    "patrons": [
-        {
-            "id": 1,
-            "name": "Barry Griffith",
-            "contactInfo": "555-555-0001",
-            "dob": "04/04/1984",
-            "libraryId": "1",
-            "active": true
-        },
-        {
-            "id": 2,
-            "name": "Abdul Alhazred",
-            "contactInfo": "555-555-0002",
-            "dob": "31/10/692",
-            "libraryId": "1",
-            "active": true
-        },
-        {
-            "id": 3,
-            "name": "Poodle Bob",
-            "contactInfo": "555-555-0003",
-            "dob": "01/04/1990",
-            "libraryId": "1",
-            "active": true
-        }
-    ],
-    "books": [
-        {
-            "id": 1,
-            "title": "Necronomicon",
-            "author": "Abdul Alhazred",
-            "genre": "Religion",
-            "isbn": "978-0380751921",
-            "libraryId": 1,
-            "available": true
-        },
-        {
-            "id": 2,
-            "title": "Swan Song",
-            "author": "Robert R. McCammon",
-            "genre": "Horror",
-            "isbn": "978-0671692650",
-            "libraryId": 1,
-            "available": true
-        },
-        {
-            "id": 3,
-            "title": "Something Wicked This Way Comes",
-            "author": "Ray Bradbury",
-            "genre": "Horror",
-            "isbn": "978-1501167713",
-            "libraryId": 1,
-            "available": false
-        },
-        {
-            "id": 4,
-            "title": "The Call of the Wild",
-            "author": "Jack London",
-            "genre": "Adventure",
-            "isbn": "978-1645940098",
-            "libraryId": 1,
-            "available": true
-        },
-        {
-            "id": 5,
-            "title": "Siddhartha",
-            "author": "Herman Hesse",
-            "genre": "Religious Historical Fiction",
-            "isbn": "978-0553208849",
-            "libraryId": 1,
-            "available": false
-        },
-        {
-            "id": 6,
-            "title": "Summer of Night",
-            "author": "Dan Simmons",
-            "genre": "Horror",
-            "isbn": "978-0399135736",
-            "libraryId": 1,
-            "available": false
-        }
-    ],
-    "patron-book": [
-        {
-            "id": 1,
-            "patronId": 1,
-            "bookId": 6,
-            "checkoutDate": "31/05/2020",
-            "returnDate": "13/06/2020"
-        },
-        {
-            "id": 2,
-            "patronId": 1,
-            "bookId": 3,
-            "checkoutDate": "31/05/2020",
-            "returnDate": "13/06/2020"
-        },
-        {
-            "id": 3,
-            "patronId": 2,
-            "bookId": 5,
-            "checkoutDate": "31/05/2020",
-            "returnDate": "13/06/2020"
-        }
-    ]
+  "libraries": [
+    {
+      "id": 1,
+      "name": "Carter County Public Library",
+      "address": "116 West Main St. Grayson, KY 41143",
+      "email": "library@email.com"
+    }
+  ],
+  "patrons": [
+    {
+      "id": 1,
+      "name": "Barry Griffith",
+      "contactInfo": "555-555-0001",
+      "dob": "1984/04/04",
+      "libraryId": "1",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Abdul Alhazred",
+      "contactInfo": "555-555-0002",
+      "dob": "692/10/31",
+      "libraryId": "1",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Poodle Bob",
+      "contactInfo": "555-555-0003",
+      "dob": "1990/04/01",
+      "libraryId": "1",
+      "active": true
+    },
+    {
+      "name": "Joe Bob Briggs",
+      "contactInfo": "1600 Pennsylvania avenue",
+      "dob": "1953/01/27",
+      "active": true,
+      "id": 4
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Necronomicon",
+      "author": "Abdul Alhazred",
+      "genre": "Religion",
+      "isbn": "978-0380751921",
+      "libraryId": 1,
+      "available": true,
+      "cover": "https://m.media-amazon.com/images/I/415H6WB3xwL._AC_UY327_QL65_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Swan Song",
+      "author": "Robert R. McCammon",
+      "genre": "Horror",
+      "isbn": "978-0671692650",
+      "libraryId": 1,
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51Ktp7ciCCL._SX373_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Something Wicked This Way Comes",
+      "author": "Ray Bradbury",
+      "genre": "Horror",
+      "isbn": "978-1501167713",
+      "libraryId": 1,
+      "available": false,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/510MDE5w7jL._SX326_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Call of the Wild",
+      "author": "Jack London",
+      "genre": "Adventure",
+      "isbn": "978-1645940098",
+      "libraryId": 1,
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/419gbaFMPmL._SX302_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Siddhartha",
+      "author": "Herman Hesse",
+      "genre": "Religious Historical Fiction",
+      "isbn": "978-0553208849",
+      "libraryId": 1,
+      "available": false,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/41gdqzKm2oL._SX302_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Summer of Night",
+      "author": "Dan Simmons",
+      "genre": "Horror",
+      "isbn": "978-0399135736",
+      "libraryId": 1,
+      "available": false,
+      "cover": "https://m.media-amazon.com/images/I/41Q7nOnuj1L._SY346_.jpg"
+    },
+    {
+      "title": "If Chins Could Kill",
+      "author": "Bruce Campbell",
+      "genre": "Autobiography",
+      "isbn": "978-0312291457",
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51k62aRhufL._SX325_BO1,204,203,200_.jpg",
+      "id": 7
+    }
+  ],
+  "patron-book": [
+    {
+      "id": 1,
+      "patronId": 1,
+      "bookId": 6,
+      "checkoutDate": "2020/05/31",
+      "returnDate": "2020/06/13"
+    },
+    {
+      "id": 2,
+      "patronId": 1,
+      "bookId": 3,
+      "checkoutDate": "2020/05/31",
+      "returnDate": "2020/06/13"
+    },
+    {
+      "id": 3,
+      "patronId": 2,
+      "bookId": 5,
+      "checkoutDate": "2020/05/31",
+      "returnDate": "2020/06/13"
+    }
+  ]
 }

@@ -28,15 +28,23 @@ class PatronList extends Component {
     }
 
 
-    
     render() {
 
         return (
+            <>
+            <section className="section-content">
+                    <button type="button"
+                        className="btn"
+                        onClick={() => { this.props.history.push("/patrons/new") }}>
+                        New Patron
+                    </button>
+                </section>
             <div className="container-cards">
                 {this.state.patrons.map((currentPatron) => {
                     return (currentPatron.active) ? <PatronCard key={currentPatron.id} patron={currentPatron} patch={this.patchPatron}/> : ''
                 })}
             </div>
+            </>
         )
     }
 }

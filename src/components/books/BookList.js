@@ -27,15 +27,25 @@ class BookList extends Component {
         })
     }
 
+
     render() {
 
         return (
+            <>
+             <section className="section-content">
+                    <button type="button"
+                        className="btn"
+                        onClick={() => { this.props.history.push("/books/new") }}>
+                        New Book
+                    </button>
+                </section>
             <div className="container-cards">
                 {this.state.books.map((currentBook) => {
                     
-                    return (currentBook.available) ? <BookCard key={currentBook.id} book={currentBook} delete={this.deleteBook}/> : ""
+                    return (currentBook.available === true) ? <BookCard key={currentBook.id} book={currentBook} delete={this.deleteBook}/>: ""
                 })}
             </div>
+            </>
         )
     }
 }

@@ -11,7 +11,7 @@ class Books extends Component {
                 <input className="books-search-input" type="text"></input>
                 </div>
                 <div className="book-list-container">
-                    <BookList />
+                    <BookList {...this.props}/>
                 </div>
             </div>
 

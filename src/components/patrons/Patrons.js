@@ -7,7 +7,7 @@ class Patrons extends Component {
             <div className="patrons-container">
                 <div className="patrons-list">
                     <h2 className="patrons-heading">List of Patrons</h2>
-                <PatronList />
+                <PatronList {...this.props}/>
                 </div>
                 
             </div>
