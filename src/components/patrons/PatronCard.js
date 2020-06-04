@@ -8,6 +8,7 @@ class PatronCard extends Component {
                     <h3><span className="card-bookname">{this.props.patron.name}</span></h3>
                     <p>Contact Info: {this.props.patron.contactInfo}</p>
                     <p>DOB: {this.props.patron.dob}</p>
+                    <button type="button" onClick={() => { this.props.history.push(`/patrons/${this.props.patron.id}/edit`) }}>Edit</button>
                     <button type="button" onClick={()=> this.props.patch(this.props.patron.id)}>Archive</button>
                 </div>
                 

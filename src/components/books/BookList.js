@@ -41,8 +41,7 @@ class BookList extends Component {
                 </section>
             <div className="container-cards">
                 {this.state.books.map((currentBook) => {
-                    
-                    return (currentBook.available === true) ? <BookCard key={currentBook.id} book={currentBook} delete={this.deleteBook}/>: ""
+                    return (currentBook.available === true) ? <BookCard key={currentBook.id} book={currentBook} delete={this.deleteBook} {...this.props}/>: ""
                 })}
             </div>
             </>

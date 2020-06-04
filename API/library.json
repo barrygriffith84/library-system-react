@@ -10,10 +10,9 @@
   "patrons": [
     {
       "id": 1,
-      "name": "Barry Griffith",
+      "name": "Barry  Griffith",
       "contactInfo": "555-555-0001",
       "dob": "1984/04/04",
-      "libraryId": "1",
       "active": true
     },
     {
@@ -34,7 +33,7 @@
     },
     {
       "name": "Joe Bob Briggs",
-      "contactInfo": "1600 Pennsylvania avenue",
+      "contactInfo": "555-555-0004",
       "dob": "1953/01/27",
       "active": true,
       "id": 4
@@ -47,9 +46,7 @@
       "author": "Abdul Alhazred",
       "genre": "Religion",
       "isbn": "978-0380751921",
-      "libraryId": 1,
-      "available": true,
-      "cover": "https://m.media-amazon.com/images/I/415H6WB3xwL._AC_UY327_QL65_.jpg"
+      "available": true
     },
     {
       "id": 2,
