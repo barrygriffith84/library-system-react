@@ -29,22 +29,29 @@ class BookDetail extends Component {
     });
 
     CheckoutManager.getFiltered(this.props.bookId)
-    .then((checkout) => {
+    .then((parsedCheckout) => {
+      // console.log("return from the fetch",parsedCheckout)
+      // console.log("this.props.bookId:",this.props.bookId)
+      // console.log(parsedCheckout)
       this.setState({
-        checkouts: checkout
+        checkouts: parsedCheckout.sort((a,b) => {
+        return new Date(b.returnDate) - new Date(a.returnDate)
       })
-    })
 
-    console.log(this.state.checkouts)
-    
+    })
+      
+      
+      // this.setState({
+      //   checkouts: parsedCheckout
+      // })
+    })
     // CheckoutManager.getFiltered(this.props.bookId).then((book) => book.forEach((r) => {console.log(r.patron.name)}))
 
   }
 
-
- 
-
   render() {
+    // console.log(this.state.checkouts)
+    console.log(this.state.checkouts[0])
     return (
       <div className="card">
         <div className="card-content">
@@ -55,7 +62,13 @@ class BookDetail extends Component {
             <p>Author: {this.state.author}</p>
             <p>Genre: {this.state.genre}</p>
             <p>isbn: {this.state.isbn}</p>
-            {/* <p>Checkouts: {this.state.checkouts}</p> */}
+            <div>
+              {this.state.checkouts.slice(0,3).map((currentCheckoutIntheLoop) => {
+                return <p>{currentCheckoutIntheLoop.patron.name}</p>
+              })}
+
+            </div>
+            {/* <p>Checkouts: {this.state.checkouts[0].patron.name}</p> */}
             
         </div>
       </div>

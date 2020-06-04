@@ -14,7 +14,7 @@ const CheckoutManager = {
     .then(result => result.json())
   },
   getFiltered(bookId) {
-    return fetch(`${remoteURL}/patron-book?bookId=${bookId}&_expand=patron`).then(result => result.json()).then(r => {console.log(r)})
+    return fetch(`${remoteURL}/patron-book?bookId=${bookId}&_expand=patron`).then(result => result.json())
   }
 }
 

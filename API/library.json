@@ -113,22 +113,43 @@
       "id": 1,
       "patronId": 1,
       "bookId": 6,
-      "checkoutDate": "2020/05/31",
-      "returnDate": "2020/06/13"
+      "checkoutDate": "2019/01/31",
+      "returnDate": "2019/02/13"
     },
     {
       "id": 2,
       "patronId": 1,
       "bookId": 3,
-      "checkoutDate": "2020/05/31",
-      "returnDate": "2020/06/13"
+      "checkoutDate": "2019/01/31",
+      "returnDate": "2019/02/13"
     },
     {
       "id": 3,
       "patronId": 2,
       "bookId": 5,
-      "checkoutDate": "2020/05/31",
-      "returnDate": "2020/06/13"
+      "checkoutDate": "2019/01/31",
+      "returnDate": "2019/02/13"
+    },
+    {
+      "id": 4,
+      "patronId": 2,
+      "bookId": 3,
+      "checkoutDate": "2020/01/31",
+      "returnDate": "2020/02/13"
+    },
+    {
+      "id": 5,
+      "patronId": 3,
+      "bookId": 3,
+      "checkoutDate": "2020/02/14",
+      "returnDate": "2020/02/28"
+    },
+    {
+      "id": 6,
+      "patronId": 4,
+      "bookId": 3,
+      "checkoutDate": "2018/05/31",
+      "returnDate": "2018/06/13"
     }
   ]
 }
